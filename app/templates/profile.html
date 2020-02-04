@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block main %}
+<div class="card-container">
+	<div class="profile">
+	<img class="round" src={{ url_for('static',filename="images/cleon.jpg") }} alt="user" />
+	<h3>Cleon Mullings</h3>
+	<h6>@caribbeanyute</h6>
+	<p>Kingston, Jamaica <br/> Joined {{date_joined}}</p>
+	</div>
+
+	<div class="skills">
+        <p>I code, therefore I am.</p>
+	    <div class = "text">
+	    	<div class="tags">
+	    			<div>
+	    				<div>250</div>
+	    				<div class"tagtext">Posts</div>
+	    			</div>
+	    			<div>
+	    				<div>250</div>
+	    				<div class"tagtext">Following</div>
+	    			</div>
+	    			<div>
+	    				<div>250</div>
+	    				<div class"tagtext">Followers</div>
+	    			</div>
+	    		
+	    		
+	    		</div>
+	    </div>
+	    
+	    <button class="followbutton">
+			Following
+		</button>
+	    	
+	    
+		
+	</div>
+</div>
+
+
+{% endblock %}
